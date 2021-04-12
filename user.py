@@ -28,16 +28,13 @@ Ahmed = User("Ahmed", 100)
 Mohammed = User("Mohammed", 0)
 Sarah = User("Sarah", 0)
 
-Ahmed.deposit(100)
-Ahmed.deposit(100)
-Ahmed.deposit(100)
+Ahmed.deposit(100).deposit(100).deposit(100)
 # Ahmed's new balance is 400
 Ahmed.make_withdrawal(50)
 # Ahmed's new balance is 350
 Ahmed.display_user_balance()
 
-Mohammed.deposit(100)
-Mohammed.deposit(100)
+Mohammed.deposit(100).deposit(100)
 # Mohammed's new balance is 200
 Mohammed.make_withdrawal(50)
 # Mohammed's new balance is 150
@@ -45,9 +42,7 @@ Mohammed.display_user_balance()
 
 Sarah.deposit(500)
 # Sarah's new balance is 500
-Sarah.make_withdrawal(50)
-Sarah.make_withdrawal(50)
-Sarah.make_withdrawal(50)
+Sarah.make_withdrawal(50).make_withdrawal(50).make_withdrawal(50)
 # Sarah's new balance is 350
 Sarah.display_user_balance()
 
